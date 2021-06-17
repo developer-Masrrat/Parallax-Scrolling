@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Product Sans";
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#background{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 105vh;
+    background-color: #dadada;
+}
+
+#background img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#gradient{
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.7), black);
+}
+
+#overlay{
+    padding: 30px 40px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    color: white;
+}
+
+nav h3{
+    font-size: 24px;
+}
+
+nav button{
+    padding: 12px 30px;
+    border-radius: 100px;
+    border: none;
+    font-weight: 600;
+}
+
+#overlay h1{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 100px;
+}
+
+#overlay footer {
+    width: 95%;
+    position: absolute;
+    bottom: 10%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h2{
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+footer h2 #big{
+    font-size: 40px;
+}
+
+footer #right a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 13px;
+}
+
+#content{
+    width: 100%;
+    height: 90vh;
+    padding-top: 1px;
+    background-color: black;
+}
+
+#elems{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 70%;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.block{
+    position: relative;
+    overflow: hidden;
+    width: 49%;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    /* background-image: url(https://images.unsplash.com/photo-1514454529242-9e4677563e7b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80); */
+}
+
+.block h5{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-weight: 100;
+    text-transform: capitalize;
+    font-size: 15px;
+    transform: translate(-50%, -50%);
+}
+
+.block #air{
+    background-image: url(https://images.unsplash.com/photo-1514454529242-9e4677563e7b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+
+}
+.block #land{
+    background-image: url(https://images.unsplash.com/photo-1494187570835-b188e7f0f26e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fG9wZW4lMjBsYW5kfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+}
+
+.block #sea{
+    background: url(https://wallpaperaccess.com/full/713343.jpg);
+}
+.block #space{
+    background: url(https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+
+#content p{
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 70px;
+    font-weight: 100;
+    line-height: 22px;
+    font-size: 13px;
+    color: white;
+}
+
+#man{
+    z-index: 10;
+}
+
+#pahad{
+    z-index: 9;
+}
+
+#sky{
+    z-index: 8;
+}
